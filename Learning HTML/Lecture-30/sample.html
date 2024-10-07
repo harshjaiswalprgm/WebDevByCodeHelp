@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding JavaScript</title>
+</head>
+<body>
+    <h1 id="codehelp1">Welcome to CodeHelp1</h1>
+
+    <h2 class="code">Welcome to CodeHelp2</h2>
+
+    <h3>Welcome to CodeHelp</h3>
+    
+    <script>
+//Selecting the element with id as "codehelp1"
+    let element = document.getElementById("codehelp1");   //here i am accessing the htlm doc and making chanfe to access hte 4
+    //htmll file 
+
+//Now changing the background color of the selected HTML element
+    element.style.backgroundColor = "red";
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>DOM using javascript</title>
+</head>
+
+<body>
+	<h1 style="color:green">GeeksforGeeks</h1>
+	<h1>Welcome</h1>
+	<p>Hi GeeksforGeeks Welcomes you</p>
+	<h2>GFG</h2>
+	<p id="second">A computer science portal</p>
+	<script type="text/javascript">
+		var paragraphs = document.getElementsByTagName("p");
+				console.log("Content in the second paragraph is "				 
+							+ paragraphs[1].innerHTML); 
+
+                             // Changing the text content of the second paragraph
+                paragraphs[1].textContent = "The original message is changed.";
+                
+                // Changing the background color of the second paragraph
+                paragraphs[1].style.backgroundColor = "yellow";
+				document.getElementById("second").innerHTML = 
+						"The original message is changed.";
+	</script>
+</body>
+
+</html>
