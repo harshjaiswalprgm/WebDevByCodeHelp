@@ -1,19 +1,17 @@
-// 
+
 // var age = 25;
 
-// if (true) {
+
+// if(true) {
 //     console.log(age);
 // }
 
-
 // function solve() {
 //     var age = 25;
-//     console.log(age)
+//     console.log(age);
 // }
-
+// console.log(age);
 // solve();
-
-// console.log(age)
 
 // var x = 10;
 // var x = 20;
@@ -44,7 +42,7 @@
 // marks = true;
 
 
-let marks = 565610681565145645554444444444444422222227;
+let marks = 923691643589612956198435971349858734895674398175698173971389678913768917638965718936789173598671893768917368973896718976891378917;
 console.log(marks);
 
 let mark;
