@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 ">Hotel Booking System</h1>
+    <table id="pricing-table">
+        <thead>
+            <tr>
+                <th>Plan</th>
+                <th>Price</th>
+                <th>Features</th>
+                <th>Select</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Basic</td>
+                <td>$10/month</td>
+                <td>Affordable essentials for budget-conscious travelers seeking a simple getaway.</td>
+                <td><button onclick="selectPlan('Basic')">Select</button></td>
+            </tr>
+            <tr>
+                <td>Standard</td>
+                <td>$20/month</td>
+                <td>A comfortable, family-friendly package with upgraded accommodations and tours.</td>
+                <td><button onclick="selectPlan('Standard')">Select</button></td>
+            </tr>
+            <tr>
+                <td>Premium</td>
+                <td>$30/month</td>
+                <td>A luxurious, all-inclusive experience with personalized VIP services for discerning travelers, free service's</td>
+                <td><button onclick="selectPlan('Premium')">Select</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Modal to display selected plans -->
+    <div id="confirmation-message" class="hidden">
+        <p>Selected Plans:</p>
+        <div id="selected-plans"></div>
+        <button onclick="closeConfirmation()">Close</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
