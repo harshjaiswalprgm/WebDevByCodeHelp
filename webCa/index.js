@@ -16,3 +16,36 @@ function closeConfirmation() {
     // Hide the modal
     document.getElementById('confirmation-message').style.display = 'none';
 }
+
+
+//write a dom manipulation function create two button elements
+function createButton(elementId, text) {
+
+}
+// Create the first button
+
+const firstButton = createButton('firstButton', 'Click Me');
+
+// Append the first button to the document body
+
+document.body.appendChild(firstButton);
+
+// Create the second button
+
+const secondButton = createButton('secondButton', 'Another Button');
+
+// Append the second button to the document body
+
+document.body.appendChild(secondButton);
+
+// Add event listeners to the buttons
+
+firstButton.addEventListener('click', function() {
+    alert('You clicked the first button!');
+});
+
+secondButton.addEventListener('click', function() {
+    alert('You clicked the second button!');
+    // Add a new button to the document body when clicked
+});
+
