@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Profile Generator</title>
+</head>
+<body>
+  <h1>Interactive Profile Generator</h1>
+  <button onclick="createProfile()">Create Profile</button>
+  
+  <div id="profileSummary" style="margin-top: 20px;"></div>
+
+  <script>
+    function createProfile() {
+      // Collecting basic details
+      const name = prompt("Enter your name:");
+      const age = prompt("Enter your age:");
+      const profession = prompt("Enter your profession:");
+      
+
+      // Collecting multiple hobbies
+      let hobbiesInput = prompt("Enter your hobbies, separated by commas:");
+      const hobbies = hobbiesInput ? hobbiesInput.split(",").map(hobby => hobby.trim()) : [];
+
+      // Creating the person object
+      const person = { name, age, profession, hobbies };
+
+      // Cloning person object using the spread operator into profile
+      let profile = { ...person };
+
+      // Prompting for additional information
+      const addMore = prompt("Do you want to add more information? (yes or no)").toLowerCase();
+
+      if (addMore === 'yes') {
+        // Collect additional details if the user chooses to
+        let skillsInput = prompt("Enter your skills, separated by commas:");
+        const skills = skillsInput ? skillsInput.split(",").map(skill => skill.trim()) : [];
+        
+        const education = prompt("Enter your education:");
+
+        // Adding additional details to the profile
+        profile = { ...profile, skills, education };
+      }
+
+      // Displaying the profile using template literals
+      const profileSummary = `
+        <h2>Profile Summary</h2>
+        <p><strong>Name:</strong> ${profile.name}</p>
+        <p><strong>Age:</strong> ${profile.age}</p>
+        <p><strong>Profession:</strong> ${profile.profession}</p>
+        <p><strong>Hobbies:</strong> ${profile.hobbies.join(", ")}</p>
+        ${profile.skills ? `<p><strong>Skills:</strong> ${profile.skills.join(", ")}</p>` : ""}
+        ${profile.education ? `<p><strong>Education:</strong> ${profile.education}</p>` : ""}
+      `;
+
+      // Displaying profile summary on the page
+      document.getElementById("profileSummary").innerHTML = profileSummary;
+    }
+  </script>
+</body>
+</html>
+<!-- 
+
+### Explanation
+- **HTML Structure**: This includes a header, a button to trigger the profile creation, and a `div` where the profile summary will be displayed.
+- **JavaScript Functionality**: The `createProfile()` function is the same as before but now outputs the profile summary directly in HTML format within the `div` with the id `profileSummary`.
+- **Interactive Prompts**: Using `prompt`, users enter their details. If they choose to add more information, additional fields for skills and education are shown.
+- **Display Output**: After gathering all details, the formatted profile summary is injected into the page inside the designated `div`. 
+
+This setup creates a user-friendly interactive profile generator within an HTML page! -->
