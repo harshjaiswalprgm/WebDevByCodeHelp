@@ -75,4 +75,4 @@ let getExp = (x,y) => {
     return ans;
 }
 
-console.log(getExp(2,10));
+console.log(getExp(3,10));
