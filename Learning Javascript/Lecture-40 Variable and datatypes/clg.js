@@ -1,5 +1,6 @@
 
-// var age = 25;
+// var age = 25;  var--> global scope and function scope dono hota h but not blocked scope
+//let o
 
 
 // if(true) {
@@ -42,7 +43,7 @@
 // marks = true;
 
 
-let marks = 923691643589612956198435971349858734895674398175698173971389678913768917638965718936789173598671893768917368973896718976891378917;
+let marks = 92369164378917;
 console.log(marks);
 
 let mark;

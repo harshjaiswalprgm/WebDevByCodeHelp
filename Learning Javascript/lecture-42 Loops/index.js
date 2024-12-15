@@ -91,10 +91,10 @@
 // let firstName = new String("Love babbar");
 // console.log(firstName);
 
-let op1 = 'English ';
-let op2 = 'HINDI ';
+// let op1 = 'English ';
+// let op2 = 'HINDI ';
 
-console.log(op2.length);
+// console.log(op2.length);
 
 // let finalAns = `${op1}${op2}`;
 // console.log(finalAns)
@@ -110,10 +110,15 @@ console.log(op2.length);
 
 //console.log(str.substring(2));
 
-let sentence = "Hello \\Jee \\Kaise\\ \\ho \\saare";
+// let sentence = "Hello \\Jee \\Kaise\\ \\ho \\saare";
 
-let words = sentence.split('\\');
+// let words = sentence.split('\\');
 
-console.log(words);
+// console.log(words);
 
-console.log(words.join('-'));
+// console.log(words.join('-'));
+
+
+for (let i = 5; i >=0; i--){
+    console.log(i);
+}
