@@ -42,11 +42,11 @@
 //     i--;
 // }while(i>0);
 
-// let i = 5;
-// while(i>0) {
-//     console.log(i);
-//     i--;
-// }
+let i = 5;
+while(i>0) {
+    console.log(i);
+    i--;
+}
 
 // for(let i=1; i<=6; i++) {
 //     if(i == 4) {
@@ -58,9 +58,9 @@
 // }
 
 // for(let i = 1; i<=4; i++) {
-//     if(i == 3) 
+//     if(i == 3)
 //         continue;
-//     else   
+//     else
 //         console.log(i);
 // }
 
@@ -80,9 +80,9 @@
 // let firstName = "Love";
 // let lastName = 'Babbar';
 
-// let name = `Love 
+// let name = `Love
 // Babbar This is
-// my 
+// my
 // Name
 // hello`;
 
@@ -119,6 +119,10 @@
 // console.log(words.join('-'));
 
 
-for (let i = 5; i >=0; i--){
-    console.log(i);
-}
+// for (let i = 5; i >=0; i--){
+//     console.log(i);
+// }
+
+let str = "harsh";
+console.log(str.substring(2));
+console.log(str.substring(2,4));
